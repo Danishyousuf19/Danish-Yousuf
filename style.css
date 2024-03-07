@@ -559,9 +559,12 @@ body.no-scroll {
     padding: 0 10px;
     border-radius: 4px;
     z-index: 1;
-    background-color: #242a35;
+    background-color: #000000;
     border: solid 1px #e8e8e82d;
     transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+svg{
+   color: ghostwhite!important
 }
 
 .download-button:hover {
