@@ -49,7 +49,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     justify-content: space-around;
-    flex-wrap: wrap;
+    
     padding: 5% 0;
 }
 .first{
@@ -723,6 +723,7 @@ svg{
     .flex_page {
         font-size: smaller;
         padding: 7% 2%;
+        flex-wrap: wrap;
     }
 
     .card-properties {
@@ -800,18 +801,16 @@ svg{
         color: transparent;  
     }
     .res{
-        margin-left: 0;
-        font-size: 2.2rem; 
-        /* -webkit-text-stroke: none;  */
-        /* color: transparent;  */
+  
+        font-size: 2rem; 
     }
 
     .first{
         flex-direction: row;
-        width: 80%;
-        justify-content: space-around;
+        width: 95%;
+        margin-bottom: 1rem;
+        justify-content: space-evenly;
         align-items: center;
-       
     }
     .dwn{
 scale: .8;
