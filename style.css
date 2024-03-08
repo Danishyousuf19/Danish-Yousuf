@@ -11,15 +11,9 @@ html {
 body {
 
     background-image: linear-gradient(146deg, #FF6B95 0%, #be62e8 100%);
-
+    /* background-image: linear-gradient(146deg, #F1EAFF 0%, #DCBFFF 100%); */
+/* background-color: #B8B5FF; */
 }
-
-
-
-
-
-
-
 
 #landing_page {
     width: 100%;
@@ -78,8 +72,7 @@ body {
 
 .card-header {
     background-color: #0d6efd;
-
-}
+           }
 
 .first_first {
     font-weight: bold;
@@ -484,8 +477,11 @@ body.no-scroll {
 
 .card-body {
     padding: .5rem !important;
+    
 }
-
+.sec-res .card-body{
+    background:#F4F5FF;
+}
 .card-img-top {
     border-radius: 7px;
 }
@@ -710,7 +706,13 @@ svg{
     }
   }
 
-
+.res{
+    font-size: 3.4rem;
+    margin-left: .4rem;
+}
+.dwn{
+    margin-left: .4rem;
+}
 
 
 
@@ -801,7 +803,7 @@ svg{
         color: transparent;  
     }
     .res{
-  
+  width: 50%;
         font-size: 2.4rem; 
     }
 
