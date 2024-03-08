@@ -801,7 +801,7 @@ svg{
     }
     .res{
         margin-left: 0;
-        font-size: 2.4rem; 
+        font-size: 2.2rem; 
         /* -webkit-text-stroke: none;  */
         /* color: transparent;  */
     }
@@ -814,10 +814,10 @@ svg{
        
     }
     .dwn{
-scale: .75;
+scale: .8;
     }
     .download{
-        scale: .8;
+        scale: .9;
     }
     .first_sec {
         font-size: small;
