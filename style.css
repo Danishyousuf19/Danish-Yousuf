@@ -512,15 +512,15 @@ body.no-scroll {
 
 .certi-card {
     border-radius: 1rem;
+   outline: 1.7px solid lightgray;
    border: none;
     padding: .7rem;
-    background-color:#f0f0ff;
-}
+    background-color:ghostwhite
 
-.certi-card:hover {
-   
-box-shadow: 0 0 8px 4px#d46de7;
-   }
+}
+.certi-card:hover{
+    outline-color:  rgb(107, 106, 106);
+}
 
    
 
