@@ -513,13 +513,13 @@ body.no-scroll {
 .certi-card {
     border-radius: 1rem;
    border: none;
-   
     padding: .7rem;
     background-color:#f0f0ff;
 }
 
 .certi-card:hover {
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+   
+box-shadow: 0 0 8px 4px#d46de7;
    }
 
    
