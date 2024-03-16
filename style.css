@@ -941,7 +941,7 @@ svg {
         object-position: -5px 5px;
         object-position: -24px 17px;
       
-}
+}}
 @media only screen and (max-width:576px) {
     .flex_page {
         font-size: smaller;
