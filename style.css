@@ -42,12 +42,13 @@ body {
 }
 
 .card-l .mail svg {
-    stroke: #fbb9b6;
+    /* stroke: #f7a7a3; */
+    stroke: #a59bf9;
     stroke-width: 3px;
 }
 
 .card-l .mail svg:hover {
-    stroke: #f55d56;
+    stroke: #5e35b1;
 }
 
 .card-l .profile-pic {
@@ -58,7 +59,8 @@ body {
     left: 3px;
     border-radius: 29px;
     z-index: 1;
-    border: 0px solid #fbb9b6;
+    /* border: 0px solid #fbb9b6; */
+    border: 0px solid #a59bf9;
     overflow: hidden;
     transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
 }
@@ -89,7 +91,7 @@ body {
     bottom: 3px;
     left: 3px;
     right: 3px;
-    background: #fbb9b6;
+    background: #a59bf9;
     top: 80%;
     border-radius: 29px;
     z-index: 2;
@@ -115,9 +117,9 @@ body {
 
 .card-l .bottom .content .about-me {
     display: block;
-    font-size: 0.9rem;
     color: white;
-    margin-top: 1rem;
+    font-family: monospace;
+    margin-top: 1.3rem;
 }
 
 .card-l .bottom .bottom-bottom {
@@ -142,13 +144,14 @@ body {
 }
 
 .card-l .bottom .bottom-bottom .social-links-container svg:hover {
-    fill: #f55d56;
+    fill: #5e35b1;
+    
     transform: scale(1.2);
 }
 
 .card-l .bottom .bottom-bottom .button {
     background: white;
-    color: #fbb9b6;
+    color: black;
     border: none;
     border-radius: 20px;
     font-size: 0.6rem;
@@ -157,7 +160,7 @@ body {
 }
 
 .card-l .bottom .bottom-bottom .button:hover {
-    background: #f55d56;
+    background: #5e35b1;
     color: white;
 }
 
@@ -179,7 +182,8 @@ body {
     left: 10px;
     border-radius: 50%;
     z-index: 3;
-    border: 7px solid #fbb9b6;
+    /* border: 7px solid #fbb9b6; */
+    border: 7px solid #a59bf9;
     box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
     transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
 }
@@ -192,7 +196,7 @@ body {
 .card-l:hover .profile-pic img {
     transform: scale(1.6);
     /* -o-object-position: 0px 25px; */
-    /* object-position: 0px 25px; */
+    object-position: 0px 25px;
     transition: all 0.5s ease-in-out 0.5s;
 }
 
@@ -223,6 +227,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     padding: 5% 0;
 }
@@ -355,7 +360,7 @@ textarea {
 
 .flex_page4 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 5% 2%;
 }
@@ -920,13 +925,34 @@ svg {
     margin-left: .4rem;
 }
 
+@media only screen and (min-width:576px) {
+    .card-l .profile-pic img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        -o-object-position: 0px 0px;
+        object-position: 0px -54px;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .card-l:hover .profile-pic img {
+        transform: scale(3.6);
+        /* -o-object-position: 0px 25px; */
+        object-position: -5px 5px;
+        object-position: -24px 17px;
+      
+}
 @media only screen and (max-width:576px) {
     .flex_page {
         font-size: smaller;
         padding: 7% 2%;
         flex-wrap: wrap;
     }
-
+    .card-l:hover .profile-pic img {
+        
+       
+        object-position: -5px 5px;
+    }
     .card-properties {
         width: 13.8rem;
     }
