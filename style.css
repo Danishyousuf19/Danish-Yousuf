@@ -311,16 +311,19 @@ background-color: #03b0c6 !important
     flex-wrap: wrap;
     justify-content: center;
 }
+#access:hover{
+scale: 1.1;
+}
 
 
 .border {
-    border: 2px solid;
+    border: none;
     border-radius: 10px;
     padding: .3rem;
-    outline: 1px solid rgb(160, 162, 162);
+    /* outline: 1px solid rgb(160, 162, 162); */
     max-width: 666px;
     padding-top: 1.3rem;
-    background-color: ghostwhite;
+    background-color: #f5f3ff;
 }
 
 .row {
@@ -1040,7 +1043,10 @@ svg {
         justify-content: space-evenly;
         align-items: center;
     }
-
+.col-4{
+    padding: 9px;
+    text-align: center;
+}
     .dwn {
         scale: .8;
     }

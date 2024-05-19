@@ -1,3 +1,871 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Yousuf</title>
+    <link rel="icon" type="img" href="img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap">
+</head>
+
+<body class="no-scroll">
+    <div class="loader-wrapper">
+        <div class="loader">
+            <p>loading</p>
+            <div class="words">
+                <span class="word">buttons</span>
+                <span class="word">forms</span>
+                <span class="word">switches</span>
+                <span class="word">cards</span>
+                <span class="word">buttons</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut();
+            $("body").removeClass("no-scroll");
+        });
+    </script>
+    <nav class="navbar navbar-expand-sm fxd-t" style="    z-index: 5">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#landing_page">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Resume_page">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project-page">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intrest_page">Interests</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact-page">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>$(document).ready(function () {
+            var prevScrollPos = window.pageYOffset;
+            $(window).scroll(function () {
+                var currentScrollPos = window.pageYOffset;
+                if (currentScrollPos > prevScrollPos + 22) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+                prevScrollPos = currentScrollPos;
+            });
+        });
+    </script>
+    <br class="div-sep">
+    <div id="landing_page">
+        <div class="card-l">
+            <button class="mail">
+                <img src="img/access.png" id="access" height="24" width="24">
+            </button>
+            <div class="profile-pic">
+                <img src="img/w5.jpg" width="666.66669" height="666.66669" id="profile">
+                <script>window.addEventListener('resize', function () {
+                        var img = document.getElementById('profile');
+                        if (window.innerWidth > 446) {
+                            img.src = 'img/w6.jpg';
+                        } else {
+                            img.src = 'img/w5.jpg';
+                        }
+                    });
+
+                    
+                    if (window.innerWidth > 576) {
+                        document.getElementById('profile').src = 'img/w6.jpg';
+                    }
+                   
+                </script>
+            </div>
+            <div class="bottom">
+                <div class="content">
+                    <span class="name">HI</span>
+                    <span class="name">I'm DANISH YOUSUF</span>
+
+                    <span class="about-me">A passionate software developer </span>
+                </div>
+                <div class="bottom-bottom">
+                    <div class="social-links-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999" viewBox="0 0 16 15.999">
+                            <path id="Subtraction_4" data-name="Subtraction 4"
+                                d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
+                                transform="translate(6 598)"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <button class="button">Buy me a Coffee</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Resume_page" class="flex_page" style="overflow: hidden;">
+        <div class="first">
+            <h1 class=" res">My Resume
+            </h1>
+            <a class="dwn"
+                href="https://docs.google.com/document/d/162K0RqON2gvJZkDRCEcDA6qN1wbXtz0y/edit?usp=drive_link&ouid=101924183694136682346&rtpof=true&sd=true">
+                <button class="download-button">
+                    <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none"
+                            stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline> data-toggle="tooltip" title=""
+                            <line y2="13" x2="8" y1="13" x1="16"></line>
+                            <line y2="17" x2="8" y1="17" x1="16"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg> <span style="color: ghostwhite;text-decoration: underline;">Docs</span>
+                    </div>
+                    <div class="download">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none"
+                            stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line y2="3" x2="12" y1="15" x1="12"></line>
+                        </svg>
+                    </div>
+                </button>
+            </a>
+        </div>
+        <script>
+
+        </script>
+
+
+        <div class="second sec-res">
+            <div class="container mt-3">
+
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="btn btn-primary " data-bs-toggle="collapse" href="#collapseOne">
+                                Education
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <div class="Edu_10">
+                                    <h5 class="text-primary med">High School</h5>
+                                    <h6 class="text-secondary sml">Islamia Model High School , Akingam(192201)</h6>
+                                    <p class="text-success sml">I successfully completed my <b>10<sup>th</sup> class</b>
+                                        with a remarkable Grade Point of <b> 9.8</b>.</p>
+                                </div>
+                                <hr>
+                                <div class="Edu_12">
+                                    <h5 class="text-primary med">Intermediate</h5>
+                                    <h6 class="text-secondary sml">Govt Higher secondary School , Kokernag(192202)</h6>
+                                    <p class="text-success sml">I successfully completed my <b>12<sup>th</sup> class</b>
+                                        with a remarkable percentage Point of <b> 95%</b>.</p>
+                                </div>
+                                <hr>
+                                <div class="Edu_grad">
+                                    <h5 class="text-primary med">Bachelor of Technology in Computer Science and
+                                        Education
+                                    </h5>
+                                    <h6 class="text-secondary sml">Institute of Technical Education and Research
+                                        ,Bhubaneshwar(751030)</h6>
+                                    <p class="text-success sml">I am currently in my <b> 2<sub>nd</sub> year</b> of
+                                        studies,
+                                        maintaining a CGPA of <b>9.49</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseTwo">
+                                Work Experience
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <div class="intern_1">
+                                    <h5 class="text-primary med">Internship In Machine Learning</h5>
+                                    <h6 class="text-secondary sml">Indian Institute of Technology , Bhubaneshwar</h6>
+                                    <h6 class="text-secondary sml"> 15 june 2023 - 15 july 2023 </h6>
+
+                                    <p class="text-success sml">I completed an intensive internship on "<b>The
+                                            Fundamentals
+                                            of Machine
+                                            Learning</b>" at the esteemed <b>Indian Institute of Technology Bhubaneswar
+                                        </b>, under the
+                                        mentorship of Dr. Devashree Tripathy. Over the course of one month, I delved
+                                        deep into core concepts, including supervised and unsupervised learning, and
+                                        gained hands-on experience in data preprocessing and model evaluation. This
+                                        immersive experience not only bolstered my technical skills but also ignited a
+                                        passion for exploring advanced topics in machine learning</p>
+                                    <a href="https://github.com/Danishyousuf19/fundamentals-of-machine-learning-"
+                                        class="" data-bs-toggle="tooltip" title="Visit Project">Project Link</a>
+                                </div>
+                                <hr>
+                                <div class="intern_2">
+                                    <h5 class="text-primary med">Internship In Web Development</h5>
+                                    <h6 class="text-secondary sml">Debotics India Private Limited , Uttar Pradesh</h6>
+                                    <h6 class="text-secondary sml"> 1 march 2024 - 1 april 2024 </h6>
+
+                                    <p class="text-success sml"><b style="color: rgb(67, 67, 67);">During my internship,
+                                            I completed a series of web development projects, including:</b>
+                                        <br>
+                                        <a href="https://github.com/Danishyousuf19/fundamentals-of-machine-learning-"
+                                            style="text-decoration: none;" data-bs-toggle="tooltip"
+                                            title="Visit Project"><b> Product Landing Page:</b></a> Designed a
+                                        captivating landing page for Dabotics India, highlighting product features
+                                        effectively.
+                                        <br>
+                                        <a href="https://github.com/Danishyousuf19/fundamentals-of-machine-learning-"
+                                            style="text-decoration: none;" data-bs-toggle="tooltip"
+                                            title="Visit Project"><b> Quiz Website & App:</b></a> Developed an
+                                        interactive quiz platform with JavaScript for student engagement.
+                                        <br>
+                                        <a href="https://github.com/Danishyousuf19/fundamentals-of-machine-learning-"
+                                            style="text-decoration: none;" data-bs-toggle="tooltip"
+                                            title="Visit Project"><b> QR Code Generator:</b></a> Created a user-friendly
+                                        QR code generator using HTML, CSS, and JavaScript.
+                                        <br>
+                                        <a href="https://github.com/Danishyousuf19/fundamentals-of-machine-learning-"
+                                            style="text-decoration: none;" data-bs-toggle="tooltip"
+                                            title="Visit Project"><b> Website Cloning:</b></a> Successfully cloned real
+                                        websites like Dabotics, Success Mantra, and Lakme, refining my web development
+                                        skills
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseThree">
+                                Achievements
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <div class="jee">
+                                    <h5 class="text-primary med">Joint Entrence Examination <span
+                                            class="text-secondary sml">JEE(Main)-2022</span></h5>
+
+                                    <h6> <b>Application No. : </b> <b class="text-secondary">220310078227 </b> </h6>
+                                    <h6> <b>Percentile : </b> <b class="text-secondary">94.5168337 </b> </h6>
+                                    <h6> <b>All India Rank : </b> <b class="text-secondary">49285</b> </h6>
+
+                                </div>
+                                <hr>
+                                <div class="cuet">
+                                    <h5 class="text-primary med">Common University Entrance Test <span
+                                            class="text-secondary sml">CUET(UG)-2022</span></h5>
+
+                                    <h6> <b>Application No. : </b> <b class="text-secondary">223510069566 </b> </h6>
+                                    <div class="container mt-3">
+
+                                        <table class="table table-striped table-bordered border-primary">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Percentile</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Chemistry</td>
+                                                    <td>99.7726781</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Mathematics</td>
+                                                    <td>84.6619021</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Physics</td>
+                                                    <td>96.0592831</td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div class="gfg">
+
+                                    <h5 class="text-primary med  " style="display: inline;">Geeks For Geeks <span
+                                            class="text-secondary sml">Problem Solving- <span class="sml">Data
+                                                Structures and Algorithms</span></span> </h5>
+                                    <span class="badge bg-primary">New</span>
+
+                                    <h6> <b>Institute Rank : </b> <b class="text-secondary">24</b> </h6>
+                                    <h6> <b>Overall Rank : </b> <b class="text-secondary"> 13255</b> </h6>
+                                    <h6> <b>Monthly Rank : </b> <b class="text-secondary"> 12444</b> </h6>
+                                </div>
+                                <hr>
+                                <div class="leetcode">
+
+
+                                    <h5 class="text-primary med" style="display: inline;">LeetCode <span
+                                            class="text-secondary sml">Problem
+                                            Solving- <span class="sml">Data
+                                                Structures and Algorithms</span></span></h5>
+                                    <span class="badge bg-primary">New</span>
+
+                                    <h6> <b>Rank : </b> <b class="text-secondary">295,317</b> </h6>
+                                    <h6> <b>Stars : </b> <b class="text-secondary"> 2.5</b> </h6>
+                                    <h6> <b>Badges : </b> <b class="text-secondary"> 4</b> </h6>
+                                </div>
+                                <hr>
+                                <div class="HackerRank">
+
+                                    <h5 class="text-primary med" style="display: inline;">HackerRank <span
+                                            class="text-secondary sml">Problem
+                                            Solving- <span class="sml">
+                                                (java)</span></span></h5>
+                                    <span class="badge bg-primary">New</span>
+
+                                    <h6> <b>Stars : </b> <b class="text-secondary">5</b> </h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseFour">
+                                Skills
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <h5 class="text-primary">Technical Skills</h5>
+                                <div class="skill">
+                                    <div class="skill-inner">
+
+                                        <h6 class="custum-text-color-dark">Tools</h6>
+                                        <ul>
+                                            <li class="custum-text-color">Eclipse</li>
+                                            <li class="custum-text-color">VS Code</li>
+                                            <li class="custum-text-color">PyScripter</li>
+                                            <li class="custum-text-color">Jupyter Notevook</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-inner">
+                                        <h6 class="custum-text-color-dark">Programming Languages</h6>
+                                        <ul>
+                                            <li class="custum-text-color">Java </li>
+                                            <li class="custum-text-color">Python </li>
+                                            <li class="custum-text-color">Html </li>
+                                            <li class="custum-text-color">Css </li>
+                                            <li class="custum-text-color">JavaScript </li>
+                                            <li class="custum-text-color">Bootstrap </li>
+                                            <li class="custum-text-color">JQuery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h5 class="text-primary">Soft Skills</h5>
+                                <div class="skill">
+                                    <div class="skill-inner">
+                                        <h6 class="custum-text-color-dark">Languages</h6>
+                                        <ul>
+                                            <li class="custum-text-color">English</li>
+                                            <li class="custum-text-color">Hindi</li>
+                                            <li class="custum-text-color">Urdu</li>
+                                            <li class="custum-text-color">Kashmiri</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-inner">
+                                        <h6 class="custum-text-color-dark">Other Skills</h6>
+                                        <ul>
+                                            <li class="custum-text-color">Communication</li>
+                                            <li class="custum-text-color">LeaderShip</li>
+                                            <li class="custum-text-color">Time Management</li>
+                                            <li class="custum-text-color">Team Work</li>
+                                            <li class="custum-text-color">Data Structures proficiency</li>
+                                            <li class="custum-text-color">Flexibility</li>
+                                            <li class="custum-text-color">Problem Solving</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="div-sep">
+
+    <div class=" flex_page" id="project-page">
+        <div class="">
+            <h1 class="" style="font-size: 3.4rem;">My Projects
+            </h1>
+        </div>
+        <div class="second sec-res">
+            <div class="container mt-3">
+                <h3 style="text-align: center; margin-bottom: 1.7rem ;">Major Projects</h3>
+                <div id="accordion-for-project">
+                    <div class="card">
+                        <div class="card-header custom-btn-cover">
+                            <a class="collapsed btn custum-btn  btn-block" data-bs-toggle="collapse" href="#project-1">
+                                Kashmir Airline Website
+                            </a>
+                            <span class="badge bg-danger">Private</span>
+                        </div>
+                        <div id="project-1" class="collapse show" data-bs-parent="#accordion-for-project">
+                            <div class="card-body">
+                                <div class="intern_1">
+                                    <h5 class="text-primary med">Project Overview:</h5>
+
+                                    <p class="text-success sml">Developed a comprehensive website for Kashmir Airline
+                                        enabling users to conveniently purchase tickets online and access a range of
+                                        ancillary services including lounge access and baggage management. Additionally,
+                                        implemented features for web check-in and flight status tracking for
+                                        international flights or domestic flights.</p>
+                                    <h5 class="text-primary med">My Role;</h5>
+                                    <p class="text-warn sml">Frontend Developer</p>
+                                    <h5 class="text-primary med">Technologies Used:</h5>
+
+                                    <p class="text-warn sml">HTML &nbsp;
+                                        CSS &nbsp;
+                                        JavaScript &nbsp;
+                                        jQuery</p>
+                                    <h5 class="text-primary med">Working On:</h5>
+
+                                    <p class=" sml" style="color: black;">Dark mode &nbsp;
+                                        Backend &nbsp;
+                                        More Features &nbsp;
+                                    </p>
+
+                                    <a href="#" class="btn btn-sml custum-btn" data-bs-toggle="modal"
+                                        data-bs-target="#WD-form"> <span class="button-content">Work with me</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container mt-3">
+                <h3 style="text-align: center; margin-bottom: 1.7rem ;">Minor Projects</h3>
+                <div id="accordion-for-project">
+                    <div class="card">
+                        <div class="card-header custom-btn-cover">
+                            <a class="collapsed btn custum-btn  btn-block" data-bs-toggle="collapse" href="#project-2">
+                                Some Minor Projects
+                            </a>
+                            <span class="badge bg-primary">Public</span>
+                        </div>
+                        <div id="project-2" class="collapse show" data-bs-parent="#accordion-for-project">
+                            <div class="card-body">
+                                <div class="intern_1">
+                                    <h5 class="text-primary med">Projects Table :</h5>
+                                    <table class="table table-striped table-bordered border-primary">
+                                        <thead>
+                                            <tr>
+                                                <th>Project Name</th>
+                                                <!-- <th class="Description-none">Description</th> -->
+                                                <th>Technologies Used</th>
+                                                <th>My Role</th>
+                                                <th>Link</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Rock Paper Scissor</td>
+                                                <!-- <td class="Description-none">Responsive Rock, Paper, Scissors game with saved scores for an engaging and seamless user experience.</td> -->
+                                                <td>HTML CSS JavaScript JQuery Bootstrap</td>
+                                                <td>Frontend</td>
+                                                <td> <a href="https://danishyousuf19.github.io/Rock-Paper-Scissors-/"
+                                                        role="button" data-bs-toggle="tooltip"
+                                                        title="Visit Project">Visit</a></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Temperature converter</td>
+                                                <!-- <td class="Description-none">A temperature converter supporting both Fahrenheit to Celsius and Celsius to Fahrenheit conversions for convenience and versatility</td> -->
+                                                <td>HTML CSS JavaScript</td>
+                                                <td>Frontend</td>
+                                                <td> <a href="https://danishyousuf19.github.io/temperature_converter/"
+                                                        role="button" data-bs-toggle="tooltip"
+                                                        title="Visit Project">Visit</a></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>School Website</td>
+                                                <!-- <td class="Description-none">A responsive school website featuring a multitude of user-friendly features for enhanced accessibility and functionality.</td> -->
+                                                <td>HTML CSS JavaScript</td>
+                                                <td>Frontend</td>
+                                                <td> <a href="https://danishyousuf19.github.io/DUSK/" role="button"
+                                                        data-bs-toggle="tooltip" title="Visit Project">Visit</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td> Food Restaurant</td>
+                                                <!-- <td class="Description-none">A dynamic and responsive restaurant website, offering an array of features for an immersive dining experience.</td> -->
+                                                <td>HTML CSS JavaScript</td>
+                                                <td>Frontend</td>
+                                                <td> <a href="https://danishyousuf19.github.io/Food_Restaurant_website/"
+                                                        role="button" data-bs-toggle="tooltip"
+                                                        title="Visit Project">Visit</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="div-sep">
+
+    <div class="certificates-page flex_page4" id="certificates">
+        <div class=" col-8 intrest_card_div" id="certi_card_div-1" style="position: relative;">
+            <div class="card certi-card card-properties">
+                <img src="img/hcC.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title med " style="color: #e6022d;;">HackerRank (java)</h5>
+                    <p class="card-text sml">I have successfully passed the HackerRank Java Skills Certification
+                        Test,.
+                    </p>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="btn button-down" data-bs-toggle="modal" data-bs-target="#certi-hacker">View</a>
+                </div>
+            </div>
+            <div class="card certi-card card-properties">
+                <img src="img/iit.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title med " style="color: #e6022d;;">IIT Bhubaneshwar</h5>
+                    <p class="card-text sml">I have successfully completed my internship in machine learning</p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="btn button-down" data-bs-toggle="modal" data-bs-target="#certi-iit">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h1 class="first_first  fsl" style="font-weight: bold;">My Certificates
+            </h1>
+
+        </div>
+    </div>
+
+    <div class="modal fade " id="certi-hacker" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/hcCfull.jpg" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="certi-iit" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/iitfull.jpg" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="div-sep">
+
+    <div id="intrest_page" style="overflow: hidden;" class="flex_page3">
+        <div class=" col-8 intrest_card_div  " id="intrest_card_div-2" style="position: relative;">
+            <div class="card card-x card-properties">
+                <img src="img/ML.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title med text-primary">Machine Learning</h5>
+                    <p class="card-text sml">Let's shape the future with data-driven insights using Machine
+                        Learning.
+                    </p>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#WD-form"> <span
+                            class="button-content">Join me </span></a>
+                </div>
+            </div>
+            <div class="card card-x card-properties">
+                <img src="img/DA.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title med text-primary">Data Analytics</h5>
+                    <p class="card-text sml">Let's harness the power of data to drive meaningful change!</p>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#WD-form"> <span
+                            class="button-content">Join me </span></a>
+                </div>
+            </div>
+            <div class="card card-x card-properties">
+                <img src="img/WD.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title med text-primary">Web Development</h5>
+                    <p class="card-text sml">Let's build responsive and engaging experiences that leave a
+                        lasting
+                        impact!.</p>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#WD-form"> <span
+                            class="button-content">Join me </span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h1 class="first_first fsl" style="font-weight: bold;">I'm Interested in!
+            </h1>
+            <div class="first_sec">
+                <h5 style="color:#6b0303;">
+                    Want to Work with me </h5>
+                <!-- <h5 style="color:#6b0303;">click on Join Me Button </h5> -->
+            </div>
+        </div>
+    </div>
+
+    <hr class="div-sep">
+
+    <div class="flex_page2 row " style="overflow: hidden;" id="Contact-page">
+        <div class="col-4">
+            <h1 class="display-4 first_first" style="font-weight: bold; margin-left: 0;">Contact me!</h1>
+            <div class="first_sec">
+                <h5 style=" margin-left: 0;   color:#6A1B9A">
+                    Have <b>any questions</b> or want to <b>Hire me</b> ?<br>
+                    Fill out the form and I’ll get you a
+                    response soon!</h5>
+            </div>
+        </div>
+        <div class="col-8 border sec-con">
+            <div class=" order-md-1 ">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="firstName">First name <span class="text-muted">(Required)</span></label>
+                            <input style="width: 98%;" type="text" class="form-control" id="firstName" placeholder=""
+                                value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="lastName">Last name <span class="text-muted">(Required)</span></label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="email">Email <span class="text-muted">(Required)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="address">Address<span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+
+                    </div>
+                    <hr>
+                    <h6 class="mb-1">Which are you?
+                        <span class="text-muted">(Required)</span>
+                    </h6>
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="Student" name="Contact-me" type="radio" class="custom-control-input" checked
+                                required>
+                            <label class="custom-control-label" for="Student">Student</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="Recruiter" name="Contact-me" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="Recruiter">Recruiter</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="other" name="Contact-me" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="FormControlTextarea1" class="form-label">Message
+                            <span class="text-muted">(Required)</span></label>
+                        <textarea class="form-control" id="FormControlTextarea1" rows="2" required></textarea>
+                    </div>
+                    <hr>
+                    <div class="custom-control custom-checkbox mb-2">
+                        <input type="checkbox" class="custom-control-input" id="save-info">
+                        <label class="custom-control-label" for="save-info">Save this for next
+                            time</label>
+                    </div>
+                    <button class="btn-purple" id="snd" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#Form-snd">Send</button>
+                    <Script>
+                        document.querySelectorAll('input[name="Contact-me"]').forEach((elem) => {
+                            elem.addEventListener('change', (e) => {
+                                if (e.target.id === 'Recruiter') {
+                                    document.getElementById('snd').innerText = 'Hire Me';
+                                } else {
+                                    document.getElementById('snd').innerText = 'Send';
+                                }
+                            });
+                        });
+                    </Script>
+                </form>
+            </div>
+        </div>
+        <script>
+
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    var forms = document.getElementsByClassName('needs-validation');
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            else {
+                                var modal = document.getElementById('WD-form');
+                                var modalInstance = bootstrap.Modal.getInstance(modal);
+                                modalInstance.hide();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+    </div>
+    <div class="modal fade" id="WD-form" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content " id="overlay-from">
+                <form class="needs-validation p-1" novalidate>
+                    <div class="mb-1 ">
+                        <label for="firstName">Name <span class="text-muted">(Required)</span></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    </div>
+                    <div class="mb-1 ">
+                        <label for="email">Email <span class="text-muted">(Required)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="mb-1 ">
+                        <label for="basic-url" class="form-label">Your Github Link<span
+                                class="text-muted">(Required)</span></label>
+                        <input type="text" class="form-control" id="basic-url"
+                            placeholder="https://github.com/Danishyousuf19" required>
+                    </div>
+                    <div class="mb-1 ">
+                        <label for="formFile" class="form-label">Upload Resume </label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <hr>
+                    <h6>You are Intrested in </h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" checked value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Web Development
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Machine Learning
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Data Analytics
+                        </label>
+                    </div>
+                    <hr>
+                    <button class="btn btn-primary btn-block" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr class="div-sep">
+
+    <div class="footer-page " style="overflow: hidden;    padding: 1% 0;">
+        <footer class="d-flex flex-wrap justify-content-around align-items-center flex-wrap-reverse footer">
+            <span style="color: black; font-size:large ;" class="my-3">© 2024 Danish Yousuf , All rights
+                reserved</span>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex my-3">
+                <li class="ms-3 zoom-out" data-toggle="tooltip" title="Github"><a class="text-primary"
+                        href="https://github.com/Danishyousuf19"><img src="img/git.png" width="32" height="32"
+                            alt="Github"></a></li>
+                <li class="ms-3 zoom-out" data-toggle="tooltip" title="linkedin"><a class="text-primary"
+                        href="https://www.linkedin.com/in/danish-yousuf-0b1aa6256/"><img src="img/li.png" width="35"
+                            height="35" alt="Linked-in"></a></li>
+                <li class="ms-3 zoom-out" data-toggle="tooltip" title="LeetCode"><a class="text-primary"
+                        href="https://auth.geeksforgeeks.org/user/danishyousuf19"><img src="img/gfg.png" width="35"
+                            height="35" alt="GeeksforGeeks"></a></li>
+                <li class="ms-3 zoom-out" data-toggle="tooltip" title="HackerRank"><a class="text-primary"
+                        href="https://www.leetcode.com/danishyousuf"><img src="img/lc.png" width="35" height="35" alt="
+                            LeetCode"></a></li>
+                <li class="ms-3 zoom-out" data-toggle="tooltip" title="HackerRank"><a class="text-primary"
+                        href="https://www.hackerrank.com/danishyousuf?hr_r=1"><img src="img/hc.png" width="35"
+                            height="35" alt="HackerRank"></a></li>
+            </ul>
+        </footer>
+
+        <script>$(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })</script>
+    </div>
+
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    </script>
+    <script src=""></script>
+</body>
+
+=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -856,4 +1724,5 @@
     </script>
 </body>
 
+>>>>>>> e8113c61a1fd9ccdacc61969dcee577b98d83760
 </html>
